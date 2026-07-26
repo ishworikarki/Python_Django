@@ -1,0 +1,257 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panto | Modern Furniture</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">Panto</a>
+      <nav class="nav-links">
+        <a href="#">Furniture <span class="caret">▾</span></a>
+        <a href="#">Shop</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+      </nav>
+      <a href="#" class="nav-cart">🛒</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <img src="{% static 'images/hero-bg.1.jpg' %}" alt="Modern living room" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Make Your Interior More<br>Minimalistic &amp; Modern</h1>
+      <p>Turn your room with panto into a lot more minimalist<br>and modern with ease and speed</p>
+      <form class="hero-search">
+        <input type="text" placeholder="Search furniture">
+        <button type="submit">Search</button>
+      </form>
+      <div class="hero-avatars">
+        <span class="avatar"></span>
+        <span class="avatar"></span>
+        <span class="avatar"></span>
+      </div>
+    </div>
+    <img src="{% static 'images/hero-plant.jpg' %}" alt="Plant" class="hero-plant">
+  </section>
+
+  <!-- ===== WHY CHOOSING US ===== -->
+  <section class="why-us">
+    <h2>Why<br>Choosing Us</h2>
+
+    <div class="stat-card">
+      <span class="stat-number">1440 x 1084</span>
+    </div>
+
+    <div class="why-feature">
+      <h3>Sustainable Materials</h3>
+      <p>We use only responsibly sourced materials so every piece 
+         is as kind to your home as it is to the planet.</p>
+      <a href="#" class="link-arrow">Read More &rarr;</a>
+    </div>
+
+    <div class="why-feature">
+      <h3>Many Choices</h3>
+      <p>We provide many unique and quality furniture design that we 
+         can offer, so that you can look for the workspace to your liking.</p>
+      <a href="#" class="link-arrow">Read More &rarr;</a>
+    </div>
+  </section>
+
+  <!-- ===== BEST SELLING PRODUCT ===== -->
+  <section class="best-selling">
+    <h2>Best Selling Product</h2>
+
+    <div class="product-tabs">
+      <button class="tab active">Chair</button>
+      <button class="tab">Bulb</button>
+      <button class="tab">Sofa</button>
+      <button class="tab">Lamp</button>
+    </div>
+
+    <div class="product-grid">
+
+      <article class="product-card">
+        <img src="{% static 'images/product-sakarias.jpg' %}" alt="Sakarias Armchair">
+        <p class="product-cat">Chair</p>
+        <h4>Sakarias Armchair</h4>
+        <p class="product-rating">★★★★★</p>
+        <div class="product-footer">
+          <span class="price">$322</span>
+          <button class="add-btn" aria-label="Add to cart">+</button>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/dining.jpg' %}" alt="Barbier Chair">
+        <p class="product-cat">Chair</p>
+        <h4>Barbier Chair</h4>
+        <p class="product-rating">★★★★★</p>
+        <div class="product-footer">
+          <span class="price">$299</span>
+          <button class="add-btn" aria-label="Add to cart">+</button>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img src="{% static 'images/product-arjay.jpg' %}" alt="Arjay Chair">
+        <p class="product-cat">Chair</p>
+        <h4>Arjay Chair</h4>
+        <p class="product-rating">★★★★★</p>
+        <div class="product-footer">
+          <span class="price">$519</span>
+          <button class="add-btn" aria-label="Add to cart">+</button>
+        </div>
+      </article>
+
+      <article class="product-card featured">
+        <img src="{% static 'images/product-nyantuy.jpg' %}" alt="Nyantuy Chair">
+        <p class="product-cat">Chair</p>
+        <h4>Nyantuy Chair</h4>
+        <p class="product-rating">★★★★★</p>
+        <div class="product-footer">
+          <span class="price">$621</span>
+          <button class="add-btn" aria-label="Add to cart">+</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="experience">
+    <img src="{% static 'images/experience-room.jpg' %}" 
+         alt="Living room set" class="experience-img">
+    <div class="experience-text">
+      <p class="eyebrow">Experiences</p>
+      <h2>We Provide You The<br>Best Experience</h2>
+      <p>You don't have to worry about the result because all of these 
+         interiors are made by people who professionally in their fields 
+         with an elegant and modern style used with premium quality materials.</p>
+      <a href="#" class="link-arrow">More Info &rarr;</a>
+    </div>
+  </section>
+
+  <!-- ===== MATERIALS ===== -->
+  <section class="materials">
+    <div class="materials-text">
+      <p class="eyebrow">Materials</p>
+      <h2>Very Serious Materials For Making Furniture</h2>
+      <p>Because panto was very serious about designing furniture for our 
+         environment, using a variety selective and famous carpenters at 
+         relatively best price.</p>
+      <a href="#" class="link-arrow">Materials &rarr;</a>
+    </div>
+    <div class="materials-collage">
+      <img src="{% static 'images/material-1.jpg' %}" alt="Chair detail">
+      <img src="{% static 'images/material-3.jpg' %}" alt="Sofa detail">
+      <img src="{% static 'images/material-4.png' %}" alt="Dining set">
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials">
+    <p class="eyebrow center">Testimonials</p>
+    <h2>Our Client Reviews</h2>
+
+    <div class="review-grid">
+
+      <article class="review-card">
+        <img src="{% static 'images/review-1.jpg' %}" alt="Client room">
+        <div class="review-author">
+          <img src="{% static 'images/person1.jpg' %}" 
+               alt="Rony Lipin" class="review-avatar">
+          <div>
+            <h5>Rony Lipin</h5>
+            <p>Interior Designer</p>
+          </div>
+        </div>
+        <p class="review-stars">★★★★★</p>
+        <p class="review-text">
+          "Absolutely love the quality! Every piece feels premium and the 
+          minimalist design fits perfectly in my studio apartment."
+        </p>
+      </article>
+
+      <article class="review-card">
+        <img src="{% static 'images/review-2.jpg' %}" alt="Client room">
+        <div class="review-author">
+          <img src="{% static 'images/person2.jpg' %}" 
+               alt="Budi Zulkifan" class="review-avatar">
+          <div>
+            <h5>Budi Zulkifan</h5>
+            <p>Homeowner</p>
+          </div>
+        </div>
+        <p class="review-stars">★★★★★</p>
+        <p class="review-text">
+          "Fast delivery and great packaging. The sofa looks even better 
+          in person than in the photos. Highly recommended!"
+        </p>
+      </article>
+
+      <article class="review-card">
+        <img src="{% static 'images/review-3.jpg' %}" alt="Client room">
+        <div class="review-author">
+          <img src="{% static 'images/person3.jpg' %}" 
+               alt="Mbok Ina" class="review-avatar">
+          <div>
+            <h5>Mbok Ina</h5>
+            <p>Homeowner</p>
+          </div>
+        </div>
+        <p class="review-stars">★★★★★</p>
+        <p class="review-text">
+          "Panto transformed my living room completely. Sustainable, 
+          stylish, and worth every single penny spent!"
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Panto</h3>
+        <p>The advantage of living in harmony with us is that panto goes 
+           into comfortable service and beautiful facilities.</p>
+      </div>
+      <div class="footer-col">
+        <h6>Services</h6>
+        <a href="#">Free Planning</a>
+        <a href="#">Comparison</a>
+        <a href="#">Financing</a>
+      </div>
+      <div class="footer-col">
+        <h6>Furniture</h6>
+        <a href="#">Bed</a>
+        <a href="#">Chair</a>
+        <a href="#">All</a>
+      </div>
+      <div class="footer-col">
+        <h6>Follow Us</h6>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Copyright &copy; 2026</span>
+      <span>Terms &amp; Conditions | Privacy Policy</span>
+    </div>
+  </footer>
+
+</body>
+</html>
